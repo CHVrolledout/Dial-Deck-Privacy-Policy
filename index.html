@@ -28,7 +28,7 @@ code{background:#2a2a2a;color:#e8e8e8}
 <body>
 
 <h1>Privacy Policy – Dial Deck</h1>
-<p class="meta">Effective date: 14 October 2026 · Last updated: 14 October 2026</p>
+<p class="meta">Effective date: 14 October 2026 · Last updated: 20 October 2026</p>
 
 <p>This Privacy Policy explains what the Android app <b>Dial Deck</b> (package name <code>com.himavarshan.dialdeck</code>, "the app") accesses on your device and how it is handled. The app is published by <b>Himavarshan Reddy</b> ("the developer", "I", "me"). You can contact me at <a href="mailto:himavarshanreddy@gmail.com">himavarshanreddy@gmail.com</a>.</p>
 
@@ -44,23 +44,24 @@ code{background:#2a2a2a;color:#e8e8e8}
 <table>
 <tr><th>Permission</th><th>What it is used for</th></tr>
 <tr><td><b>Call log</b> (<code>READ_CALL_LOG</code>)</td><td>To read your most recent calls (the number, the saved contact name if available, the time, and whether the call was incoming, outgoing or missed) and show them in the widget's Recents list so you can call back. The app never changes, adds or deletes call log entries.</td></tr>
-<tr><td><b>Contacts</b> (<code>READ_CONTACTS</code>)</td><td>To read the contacts you have starred in your Contacts app (names and phone numbers) and show them in the widget's Favourites list.</td></tr>
+<tr><td><b>Contacts</b> (<code>READ_CONTACTS</code>)</td><td>To read the contacts you have starred in your Contacts app (names and phone numbers) and show them in the widget's Favourites list, and to show a contact's photo next to their name in the widget, if you have saved one. You can turn photos off in the app.</td></tr>
 <tr><td><b>Phone</b> (<code>CALL_PHONE</code>)</td><td>To place a call when you tap a name. The call itself is made by your phone's own calling service, not by the app.</td></tr>
+<tr><td><b>Phone status</b> (<code>READ_PHONE_STATE</code>)</td><td>Only to notice that a call has ended, so the Recents list can refresh a few seconds later. The app does not read your phone number, IMEI, SIM details or any other device identifier.</td></tr>
 <tr><td><b>Run at start-up</b> (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>To restore the widget's refresh after your phone restarts. This does not give access to any personal data.</td></tr>
 </table>
-<p>The app also asks Android to tell it when the call log changes, so the Recents list can refresh a few seconds after a call ends. This only tells the app that something changed. You can turn this refresh off in the app, and Recents will then refresh only when you use the widget.</p>
+<p>The app also asks Android to tell it when a call ends and when the call log changes, so the Recents list can refresh a few seconds after a call. This only tells the app that something changed. You can turn this refresh off in the app, and Recents will then refresh only when you use the widget.</p>
 
 <h2>3. How the information is used and where it stays</h2>
 <ul>
 <li>The information above is read and processed <b>only on your device</b>, and only to display the widget and place the call you ask for.</li>
 <li>Names and numbers shown in the widget are displayed on your home screen by your device's launcher (home screen app), as with any widget.</li>
 <li>The app does <b>not</b> request internet permission. It has no ability to send your information off your device and does not do so.</li>
-<li>The app does not copy your call history or contact details into its own storage. The lists are read from Android each time they are needed.</li>
+<li>The app does not copy your call history, contact details or contact photos into its own storage. They are read from Android each time they are needed.</li>
 </ul>
 
 <h2>4. What the app stores on your device</h2>
 <ul>
-<li>Your settings: theme, colours, how long names are shown, whether instant refresh is on, and which tab was last open.</li>
+<li>Your settings: theme, colours, how long names are shown, one or two columns, whether contact photos are shown, whether instant refresh is on, and which tab was last open.</li>
 <li>The order in which you arranged your favourites, saved as internal contact ID numbers.</li>
 </ul>
 <p>This is kept in the app's private storage on your phone, which other apps cannot read under normal Android protections. It is removed when you uninstall the app. The app opts out of Android cloud backup, so this information is not backed up to your Google account by the app.</p>
@@ -78,7 +79,7 @@ code{background:#2a2a2a;color:#e8e8e8}
 
 <h2>7. Your choices and controls</h2>
 <ul>
-<li>You can allow or revoke any permission at any time in <i>Android Settings &gt; Apps &gt; Dial Deck &gt; Permissions</i>. Without the Call log permission the widget cannot show Recents. Without the Contacts permission it cannot show Favourites. Without the Phone permission it cannot place a call directly.</li>
+<li>You can allow or revoke any permission at any time in <i>Android Settings &gt; Apps &gt; Dial Deck &gt; Permissions</i>. Without the Call log permission the widget cannot show Recents. Without the Contacts permission it cannot show Favourites. Without the Phone permission it cannot place a call directly, and Recents refreshes only when you use the widget instead of after each call.</li>
 <li>You can remove the widget from your home screen or uninstall the app at any time.</li>
 </ul>
 
