@@ -37,7 +37,7 @@ code{background:#2a2a2a;color:#e8e8e8}
 </div>
 
 <h2>1. What the app does</h2>
-<p>Dial Deck is a home-screen widget. It displays a list of your recent calls and your favourite (starred) contacts. When you tap a name, the app asks your phone's calling service to start a call to that number. A "Phone" tab opens your default phone app.</p>
+<p>Dial Deck is a home-screen widget. It displays a list of your recent calls and your favourite (starred) contacts. When you tap a name, the app does what you chose in the widget's side bar: it asks your phone's calling service to start a call to that number, opens that contact's chat in WhatsApp, or opens a new message to them in your Messages app. The side bar can also open your Phone, WhatsApp or Messages app.</p>
 
 <h2>2. Information the app accesses on your device</h2>
 <p>The app requests the following permissions. Each is used only for the purpose listed, and only when needed to draw or use the widget.</p>
@@ -49,7 +49,7 @@ code{background:#2a2a2a;color:#e8e8e8}
 <tr><td><b>Phone status</b> (<code>READ_PHONE_STATE</code>)</td><td>Only to notice that a call has ended, so the Recents list can refresh a few seconds later. The app does not read your phone number, IMEI, SIM details or any other device identifier.</td></tr>
 <tr><td><b>Run at start-up</b> (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>To restore the widget's refresh after your phone restarts. This does not give access to any personal data.</td></tr>
 </table>
-<p>The app also asks Android to tell it when a call ends and when the call log changes, so the Recents list can refresh a few seconds after a call. This only tells the app that something changed. You can turn this refresh off in the app, and Recents will then refresh only when you use the widget.</p>
+<p>The app also asks Android to tell it when a call ends and when the call log or your contacts change, so the widget can refresh a few seconds later (for example to show a name you just saved). This only tells the app that something changed. You can turn these refreshes off in the app's settings.</p>
 
 <h2>3. How the information is used and where it stays</h2>
 <ul>
@@ -71,7 +71,7 @@ code{background:#2a2a2a;color:#e8e8e8}
 <li>The app does <b>not collect</b> personal information. Nothing is transmitted to me or to any server.</li>
 <li>The app does <b>not share, sell or rent</b> information to any third party.</li>
 <li>The app contains <b>no advertising, analytics, crash reporting or tracking</b>, and no third-party software that collects data.</li>
-<li>When you tap a name, the phone number is passed to your device's calling service to start the call you requested. This is an action you take on purpose and is not collected by the developer.</li>
+<li>When you tap a name, the phone number is passed to your device's calling service to start the call you requested, or, if you chose WhatsApp or SMS in the side bar, to WhatsApp or your Messages app so it can open that conversation. This is an action you take on purpose and is not collected by the developer. What happens inside WhatsApp or your Messages app is covered by that app's own privacy policy.</li>
 </ul>
 
 <h2>6. Data retention and deletion</h2>
