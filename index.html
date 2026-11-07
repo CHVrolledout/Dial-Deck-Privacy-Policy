@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dial Deck – Privacy Policy</title>
-<meta name="description" content="Privacy policy for Dial Deck, an Android home-screen widget for your favourite contacts.">
+<meta name="description" content="Privacy policy for Dial Deck, a simple Phone app for Android with a home-screen widget.">
 <style>
 :root{color-scheme:light dark}
 body{font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;max-width:720px;margin:40px auto;padding:0 18px;color:#111;background:#fff}
@@ -28,76 +28,58 @@ code{background:#2a2a2a;color:#e8e8e8}
 <body>
 
 <h1>Privacy Policy – Dial Deck</h1>
-<p class="meta">Effective date: 14 October 2026 · Last updated: 6 November 2026</p>
+<p class="meta">Effective date: 14 October 2026 · Last updated: 7 November 2026 (version 5.0)</p>
 
 <p>This Privacy Policy explains what the Android app <b>Dial Deck</b> (package name <code>com.himavarshan.dialdeck</code>, "the app") accesses on your device and how it is handled. The app is published by <b>Himavarshan Reddy</b> ("the developer", "I", "me"). You can contact me at <a href="mailto:himavarshanreddy@gmail.com">himavarshanreddy@gmail.com</a>.</p>
 
 <div class="box">
-<b>Summary:</b> Dial Deck shows your starred contacts on your home screen so you can call them with one tap. All of this happens on your phone. The app has no internet permission, does not collect your data, does not send anything to me or anyone else, and contains no ads, analytics, tracking or third-party software that collects data.
+<b>Summary:</b> Dial Deck is a Phone app and a home-screen widget. Everything it uses (your calls, call history and contacts) stays on your phone. The app has no internet permission, no ads, no analytics, no tracking and no account. It never sends your data to me or anyone else. The one exception is a test report that you can choose to email to me yourself, described in section 5.
 </div>
 
 <h2>1. What the app does</h2>
-<p>Dial Deck is a home-screen widget. It displays a list of your favourite (starred) contacts. When you tap a name, the app does what you chose in the widget's side bar: it asks your phone's calling service to start a call to that number, opens that contact's chat in WhatsApp, or opens a new message to them in your Messages app. The side bar can also open your Phone, WhatsApp or Messages app, and its clock button opens your phone's own call history app. Dial Deck itself does not read your call log.</p>
+<p>Dial Deck can be your phone's <b>default Phone app</b>. It then shows the screen for incoming and outgoing calls, lets you answer, decline, hold, mute and end calls, shows your recent calls (Recents), favourites and contacts, notifies you of missed calls, and can block numbers. Its home-screen widget shows your favourites and, while Dial Deck is your Phone app, your recent calls; tapping a name calls that person, or opens a chat in WhatsApp or a new message, depending on the mode you chose. Calls themselves are carried by your phone's own calling service and your mobile carrier.</p>
 
 <h2>2. Information the app accesses on your device</h2>
-<p>The app requests the following permissions. Each is used only for the purpose listed, and only when needed to draw or use the widget.</p>
 <table>
-<tr><th>Permission</th><th>What it is used for</th></tr>
-<tr><td><b>Contacts</b> (<code>READ_CONTACTS</code>)</td><td>To read the contacts you have starred in your Contacts app (names and phone numbers) and show them in the widget's Favourites list, and to show a contact's photo next to their name in the widget, if you have saved one. You can turn photos off in the app.</td></tr>
-<tr><td><b>Phone</b> (<code>CALL_PHONE</code>)</td><td>To place a call when you tap a name. The call itself is made by your phone's own calling service, not by the app.</td></tr>
-<tr><td><b>Run at start-up</b> (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>To restore the widget's refresh after your phone restarts. This does not give access to any personal data.</td></tr>
+<tr><th>Permission / access</th><th>What it is used for</th></tr>
+<tr><td>Call log (READ_CALL_LOG, WRITE_CALL_LOG)</td><td>Only while Dial Deck is your default Phone app: showing Recents in the app and widget, missed calls and the calls with a contact. It changes your call history only when you delete calls or clear your history, and to mark missed calls as seen.</td></tr>
+<tr><td>Contacts (READ_CONTACTS, WRITE_CONTACTS)</td><td>Showing names, numbers and photos. It changes a contact only when you ask: starring or unstarring a favourite, or choosing a ringtone for that contact.</td></tr>
+<tr><td>Phone (CALL_PHONE, READ_PHONE_STATE)</td><td>Placing calls, and knowing when a call ends so Recents refresh. No phone number, IMEI or other identifier of your phone is read.</td></tr>
+<tr><td>Calls (as the default Phone app)</td><td>Android hands Dial Deck your calls so it can show the call screen and act on your taps. Optional call screening checks incoming numbers against your contacts on the phone if you turn on blocking of unknown or private callers.</td></tr>
+<tr><td>Notifications, full-screen alerts, wake lock</td><td>Showing incoming, ongoing and missed calls; showing the call screen over the lock screen; turning the screen off when the phone is at your ear.</td></tr>
+<tr><td>Start at boot (RECEIVE_BOOT_COMPLETED)</td><td>Keeping the widget up to date after a restart. No data is accessed.</td></tr>
 </table>
-<p>The app also asks Android to tell it when your contacts change, so the widget can refresh a few seconds later (for example to show a name you just saved). This only tells the app that something changed. You can turn these refreshes off in the app's settings.</p>
 
 <h2>3. How the information is used and where it stays</h2>
-<ul>
-<li>The information above is read and processed <b>only on your device</b>, and only to display the widget and place the call you ask for.</li>
-<li>Names and numbers shown in the widget are displayed on your home screen by your device's launcher (home screen app), as with any widget.</li>
-<li>The app does <b>not</b> request internet permission. It has no ability to send your information off your device and does not do so.</li>
-<li>The app does not read your call log. It does not copy your contact details or contact photos into its own storage. They are read from Android each time they are needed.</li>
-</ul>
+<p>All of the information above is read and used only on your phone, to show it to you and to do what you tap. Numbers you block are kept in Android's own blocked-numbers list. If you choose to message someone, Dial Deck hands their number to WhatsApp or your Messages app, whose own privacy policies then apply. "Reply with a message" on a ringing call is sent by your phone's own messaging service.</p>
 
 <h2>4. What the app stores on your device</h2>
-<ul>
-<li>Your settings: theme, colours, font, how long names are shown, one or two columns, how many contacts are shown, how favourites are sorted, the order of the side bar modes, whether contact photos are shown, whether instant refresh is on, and whether you have seen the tips or the rating request.</li>
-<li>The order of your favourites (your own order), saved as internal contact ID numbers.</li>
-</ul>
-<p>This is kept in the app's private storage on your phone, which other apps cannot read under normal Android protections. It is removed when you uninstall the app. The app opts out of Android cloud backup, so this information is not backed up to your Google account by the app.</p>
+<p>Your settings (appearance, colour, widget choices), the order of your favourites, the number you chose for each contact, your quick replies, and a short diagnostic log of what the call screen and call engine did, in which every phone number is shortened to its last two digits. This stays in the app's private storage and is removed when you uninstall the app. The app does not use cloud backup.</p>
 
 <h2>5. Data collection and sharing</h2>
-<ul>
-<li>The app does <b>not collect</b> personal information. Nothing is transmitted to me or to any server.</li>
-<li>The app does <b>not share, sell or rent</b> information to any third party.</li>
-<li>The app contains <b>no advertising, analytics, crash reporting or tracking</b>, and no third-party software that collects data.</li>
-<li>When you tap a name, the phone number is passed to your device's calling service to start the call you requested, or, if you chose WhatsApp or SMS in the side bar, to WhatsApp or your Messages app so it can open that conversation. This is an action you take on purpose and is not collected by the developer. What happens inside WhatsApp or your Messages app is covered by that app's own privacy policy.</li>
-<li><b>Send feedback</b> opens your own email app with my address, a subject, and your app version and phone model filled in. Nothing is sent unless you send that email yourself.</li>
-<li><b>Rate on Google Play</b> opens Dial Deck's page in the Play Store. Any rating or review you leave there is handled by Google.</li>
-</ul>
+<p>Dial Deck does not collect or share your personal data. It has no internet permission, so it cannot send anything by itself.</p>
+<p><b>Test reports (only if you send one):</b> Settings › Help › Send test report opens your own email app with a report addressed to me. It contains the diagnostic log described above, crash details, your phone model, Android version and the app version. Every phone number in it is shortened to its last two digits; it contains no names, no full numbers and no call history. Nothing is sent unless you press send in your email app. I use reports only to fix problems. <b>Send feedback</b> works the same way: it opens your email app, and only what you write is sent.</p>
 
 <h2>6. Data retention and deletion</h2>
-<p>Because I do not collect any of your data, there is nothing on my side to retain or delete. To remove everything the app stores on your phone, clear the app's storage in <i>Android Settings &gt; Apps &gt; Dial Deck &gt; Storage</i>, or uninstall the app.</p>
+<p>Data on your phone stays until you delete it or uninstall the app. Test reports and feedback emails you send are kept only as long as needed to fix the problem; email me and I will delete them.</p>
 
 <h2>7. Your choices and controls</h2>
-<ul>
-<li>You can allow or revoke any permission at any time in <i>Android Settings &gt; Apps &gt; Dial Deck &gt; Permissions</i>. Without the Contacts permission the widget cannot show your favourites. Without the Phone permission tapping a name opens your dialer with the number filled in, instead of calling directly.</li>
-<li>You can remove the widget from your home screen or uninstall the app at any time.</li>
-</ul>
+<p>You can stop using Dial Deck as your Phone app at any time (Android Settings › Apps › Default apps › Phone app); it then stops reading your call log. You can withdraw any permission in Settings › Apps › Dial Deck › Permissions, or uninstall the app, which removes everything it stored.</p>
 
 <h2>8. Security</h2>
-<p>Your information is not sent anywhere, which removes the risks of transmitting or storing it on a server. It remains protected by your device's own security, such as your screen lock and Android's app isolation. Please keep your device and Android version up to date.</p>
+<p>Your data stays in Android's protected storage for the app and in Android's own call log, contacts and blocked-numbers lists. Because the app never transmits data, there is no server or account that could be breached.</p>
 
 <h2>9. Children's privacy</h2>
-<p>Dial Deck is intended for adults (18 and over) and is not directed at children. The app does not knowingly collect personal information from anyone, including children.</p>
+<p>The app is not directed at children under 13 and does not knowingly collect information from anyone.</p>
 
 <h2>10. Your rights</h2>
-<p>Laws in some places (for example the GDPR in the EU and UK, and the CCPA/CPRA in California) give you rights to access, correct or delete personal data held by a company. Because the app does not collect or hold your personal data, there is no data for me to provide, change or erase. If you have a question or concern, you can contact me at the address below.</p>
+<p>Depending on where you live, you may have rights to access or delete personal data. Since the app collects nothing, there is no data held about you, except a test report or email you chose to send, which I will delete on request.</p>
 
 <h2>11. Changes to this policy</h2>
-<p>If the app's use of information changes, I will update this page and change the "Last updated" date above. If a change adds new data collection, I will also update the app's Google Play listing and Data safety information.</p>
+<p>If this policy changes, the updated version will be posted on this page with a new "Last updated" date.</p>
 
 <h2>12. Contact</h2>
-<p>Developer: Himavarshan Reddy<br>
-Email: <a href="mailto:himavarshanreddy@gmail.com">himavarshanreddy@gmail.com</a></p>
+<p>Questions about this policy: <a href="mailto:himavarshanreddy@gmail.com">himavarshanreddy@gmail.com</a></p>
 
 </body>
 </html>
