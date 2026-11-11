@@ -28,7 +28,7 @@ code{background:#2a2a2a;color:#e8e8e8}
 <body>
 
 <h1>Privacy Policy – Dial Deck</h1>
-<p class="meta">Effective date: 14 October 2026 · Last updated: 7 November 2026 (version 5.0)</p>
+<p class="meta">Effective date: 14 October 2026 · Last updated: 10 November 2026 (version 5.1)</p>
 
 <p>This Privacy Policy explains what the Android app <b>Dial Deck</b> (package name <code>com.himavarshan.dialdeck</code>, "the app") accesses on your device and how it is handled. The app is published by <b>Himavarshan Reddy</b> ("the developer", "I", "me"). You can contact me at <a href="mailto:himavarshanreddy@gmail.com">himavarshanreddy@gmail.com</a>.</p>
 
@@ -44,17 +44,19 @@ code{background:#2a2a2a;color:#e8e8e8}
 <tr><th>Permission / access</th><th>What it is used for</th></tr>
 <tr><td>Call log (READ_CALL_LOG, WRITE_CALL_LOG)</td><td>Only while Dial Deck is your default Phone app: showing Recents in the app and widget, missed calls and the calls with a contact. It changes your call history only when you delete calls or clear your history, and to mark missed calls as seen.</td></tr>
 <tr><td>Contacts (READ_CONTACTS, WRITE_CONTACTS)</td><td>Showing names, numbers and photos. It changes a contact only when you ask: starring or unstarring a favourite, or choosing a ringtone for that contact.</td></tr>
+<tr><td>My info</td><td>Your own details at the top of Contacts come from your Contacts app: its "Me" entry, or the contact you add or pick as yourself ("Add my info" opens your Contacts app, which saves it). Dial Deck only shows them; a tap copies a number or email to your clipboard.</td></tr>
 <tr><td>Phone (CALL_PHONE, READ_PHONE_STATE)</td><td>Placing calls, and knowing when a call ends so Recents refresh. No phone number, IMEI or other identifier of your phone is read.</td></tr>
 <tr><td>Calls (as the default Phone app)</td><td>Android hands Dial Deck your calls so it can show the call screen and act on your taps. Optional call screening checks incoming numbers against your contacts on the phone if you turn on blocking of unknown or private callers.</td></tr>
-<tr><td>Notifications, full-screen alerts, wake lock</td><td>Showing incoming, ongoing and missed calls; showing the call screen over the lock screen; turning the screen off when the phone is at your ear.</td></tr>
+<tr><td>Notifications, full-screen alerts, wake lock</td><td>Showing incoming, ongoing and missed calls and call-back reminders; showing the call screen over the lock screen; turning the screen off when the phone is at your ear.</td></tr>
+<tr><td>Alarms &amp; reminders</td><td>So a call-back reminder you set arrives at the exact time. If you don't allow it, reminders still come, up to a few minutes late.</td></tr>
 <tr><td>Start at boot (RECEIVE_BOOT_COMPLETED)</td><td>Keeping the widget up to date after a restart. No data is accessed.</td></tr>
 </table>
 
 <h2>3. How the information is used and where it stays</h2>
-<p>All of the information above is read and used only on your phone, to show it to you and to do what you tap. Numbers you block are kept in Android's own blocked-numbers list. If you choose to message someone, Dial Deck hands their number to WhatsApp or your Messages app, whose own privacy policies then apply. "Reply with a message" on a ringing call is sent by your phone's own messaging service. If you tap Share contact (or Share number), Android's share sheet opens and Dial Deck hands that one contact card, or number, to the app you pick; nothing is shared unless you choose an app.</p>
+<p>All of the information above is read and used only on your phone, to show it to you and to do what you tap. Numbers you block are kept in Android's own blocked-numbers list. If you choose to message someone, Dial Deck hands their number to WhatsApp or your Messages app, whose own privacy policies then apply. "Reply with a message" on a ringing call is sent by your phone's own messaging service. If you tap Share contact (or Share number), Android's share sheet opens and Dial Deck hands that contact's name and number(s), as text, to the app you pick; nothing is shared unless you choose an app.</p>
 
 <h2>4. What the app stores on your device</h2>
-<p>Your settings (appearance, colour, widget choices), the order of your favourites, the number you chose for each contact, your quick replies, and a short diagnostic log of what the call screen and call engine did, in which every phone number is shortened to its last two digits. This stays in the app's private storage and is removed when you uninstall the app. The app does not use cloud backup.</p>
+<p>Your settings (appearance, colour, hand, widget choices), the order of your favourites, the number you chose for each contact, which contact is you (for My info), your quick replies, any call-back reminders you set (the number, name and time), and a short diagnostic log of what the call screen and call engine did, in which every phone number is shortened to its last two digits. This stays in the app's private storage and is removed when you uninstall the app. The app does not use cloud backup.</p>
 
 <h2>5. Data collection and sharing</h2>
 <p>Dial Deck does not collect or share your personal data. It has no internet permission, so it cannot send anything by itself.</p>
